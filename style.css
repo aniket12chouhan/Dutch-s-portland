@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-self {
+    width: 100%;
+    height: 30px;
+    background-color: brown;
+    color: white;
+    padding-top: 5px;
+    position: fixed;
+    z-index: +2;
+   
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-right: 10px;
+
+}
+
+nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+nav p {
+    margin-top: 3px;
+    font-size: 13px;
+    font-family: "Open Sans", "Helvetica neue", Helvetica, Arial, sans-serif;
+    ;
+}
+
+.cantainer-fluid{
+    width: 100%;
+    min-height: 250vh;
+    background-image: url(./background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+/* menu section ::backdrop */
+
+.menu{
+ 
+    top: 60px;
+    left: 260px;
+   position: fixed;
+
+}
+
+
+.menubutton{
+    margin-top: 2px;
+    background-color:  rgb(255, 255, 255,80%);
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+
+}
+.menubutton button{
+    height: 40px;
+       border: none;
+       background-color: rgb(255, 255, 255,0%);
+}
+
+.menubutton button:hover{
+
+    background-color: rgb(167, 238, 238);
+   
+}
+.menubutton a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: brown;
+    border-bottom: 1px solid rgb(105, 55, 55) ;
+}
+
+.socialnetwork{
+    width: 180px;
+    height: 60px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(255, 255, 255,80%);
+
+}
+
+.socialnetwork i{
+  font-size: 33px;
+  margin: 0px 3px;
+  color:  rgb(148, 147, 147);
+
+}
+.menu-section{
+    position: relative;
+    left: 450px;
+    top: 60px;
+
+}
+
+.heading{
+   
+    color: rgb(255, 255, 255);
+    width: 50%;
+   
+   
+   
+}
+.heading-text{
+    width: 100%;
+   height: 100%;
+    padding: 8px;
+    background-color: brown;
+}
+.heading h4{
+
+    text-align: center;
+    width: 100%;
+   
+
+}
+
+
+.slider-image{
+    width: 100%;
+    background-color: white;
+    
+    margin: 15px 0px;
+
+   padding: 15px;
+   
+    
+  }
+
+.menu-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: 15px;
+    margin-top: 30px;
+   
+   background-color: rgb(245, 245, 245,85%);
+    padding: 20px;
+    width: 50%;
+    min-height: 100px;
+  
+}
+.menu-card h2{
+    font-family: "Open Sans" , "Helvetica Neue", Arial, "sans-serif";
+    color: brown;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.menu-card hr{
+    margin-top: 30px;
+    border: 1px solid rgb(35, 215, 179);
+    
+}
+
+
+
+
+.imgoffeast{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+}
+.imgoffeast img{
+    width: 100%;
+   
+}
+.borderdiv{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid rgb(35, 215, 179);
+    position: relative;
+}
+
+.borderdiv h4{
+    color: #A59383;
+    font-size: 16px;
+
+}
+.borderdiv a{
+    text-decoration: none;
+    color: #18cece;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.checkout{
+    padding: 5px;
+   grid-column: 1 /2;
+   grid-row: 1 /5;
+   text-align: center;
+   width: 100%;
+   border: 5px solid rgb(35, 215, 179);
+
+}
+.pre-section{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+}
+.checkout pre{
+    font-size: 11px;
+    color: rgb(100, 100, 100);
+   
+    
+}
+.checkout span{
+    color: rgb(81, 75, 75);
+  font-weight: 800;
+  font-size: 14px;
+}
+.feast{
+  grid-column: 2 /3;
+  grid-row: 1/4;
+  padding: 5px;
+  text-align: center;
+  border: 5px solid rgb(35, 215, 179);
+   
+}
+.catering{
+    grid-column: 1 /2;
+    grid-row: 5/7;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid rgb(35, 215, 179);
+    
+
+}
+.catering i{
+    font-size: 25px;
+    color: rgb(160, 160, 160);
+}
+.catering i{
+    font-size: 25px;
+    color: rgb(160, 160, 160);
+}
+.delivery{
+    grid-column: 1 /2;
+    grid-row: 7 /9;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid rgb(35, 215, 179);
+}
+
+.hour{
+    grid-column: 2/3;
+    grid-row: 4/6;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid rgb(35, 215, 179);
+  
+   
+}
+.online{
+    grid-column: 2/3;
+    grid-row: 6/8;
+    padding: 5px;
+    border: 5px solid rgb(35, 215, 179);
+    text-align: center;
+}
+
+
+/* responsive  */
+
+
+@media(max-width:1279px){
+   
+    .menu{
+ 
+        top: 60px;
+        left: 200px;
+       position: fixed;
+    
+    }
+
+    .menu-section{
+        position: relative;
+        left: 400px;
+        top: 60px;
+    
+    } 
+
+
+
+
+
+
+}
+
+
+
+
+
+/* for 1080 */
+
+@media(max-width: 1080px){
+   
+    .menu{
+ 
+        top: 60px;
+        left: 200px;
+       position: fixed;
+    
+    }
+
+    .menu-section{
+        position: relative;
+        left: 400px;
+        top: 60px;
+    
+    } 
+
+  
+
+
+
+}
+
+
+
+
+/* for 991  */
+
+@media(max-width: 991px){
+   
+    .menu{
+ 
+        top: 60px;
+        left: 100px;
+       position: fixed;
+    
+    }
+
+    .menu-section{
+        position: relative;
+        left: 310px;
+        top: 60px;
+    
+    } 
+
+
+
+.menu-card h2{
+    font-size: 15px;
+   
+}
+
+
+.borderdiv h4{
+   
+    font-size: 12px;
+    
+
+}
+.borderdiv a{
+    font-size: 12px;
+    color: #18cece;
+   
+}
+
+
+
+}
+
+
+
+
+/* for  780px online heading font size */
+
+@media(max-width: 780px){
+   
+    .menu{
+ 
+        top: 60px;
+        left: 100px;
+       position: fixed;
+    
+    }
+
+    .menu-section{
+        position: relative;
+        left: 320px;
+        top: 60px;
+    
+    } 
+
+
+
+    .menu-card{
+      display: flex;
+      flex-direction: column;
+        
+    
+      
+    }
+
+    .checkout{
+        height: 250px;
+    }
+    
+   
+   
+   .menu-card h2{
+       font-size: 18px;
+      
+   }
+   
+
+   
+   
+
+}
+
+
+
+
+
+/* for  560px online heading font size */
+
+@media(max-width: 560px){
+   
+    .menu{
+ 
+        top: 60px;
+        left: 10px;
+       position: fixed;
+    
+    }
+
+    .menu-section{
+        position: relative;
+        left: 200px;
+        top: 60px;
+    
+    } 
+
+
+
+    .menu-card{
+      display: flex;
+      flex-direction: column;
+        
+    
+      
+    }
+
+    
+
+
+
+}
+
+
+
+
+/* for  480px online heading font size */
+
+@media(max-width: 480px){
+   
+    .menu{
+ 
+     display: none;
+    }
+
+    .menu-section{
+        position: relative;
+        left: 10px;
+        top: 60px;
+      
+    
+    } 
+
+    .heading{
+   
+        color: rgb(255, 255, 255);
+        width: 100%;
+       
+       
+       
+    }
+    .menu-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8,1fr);
+        grid-gap: 15px;
+        margin-top: 30px;
+       
+       background-color: rgb(245, 245, 245,85%);
+        padding: 20px;
+        width: 100%;
+        min-height: 100px;
+      
+    }
+  
+
+
+    .checkout{
+        height: 450px;
+    }
+    
+    
+   
+   
+   .menu-card h2{
+       font-size: 14px;
+      
+   }
+   
+   .menu-card hr{
+       margin-top: 14px;
+       
+   }
+   .borderdiv h4{
+       color: #A59383;
+       font-size: 14px;
+       margin-bottom: 35px;
+   
+   }
+   .borderdiv a{
+       font-size: 12px;
+       color: #18cece;
+       font-weight: 500;
+      
+   }
+   
+   
+   .checkout pre{
+       font-size: 10px;
+       color: rgb(100, 100, 100);
+      
+       
+   }
+   .checkout span{
+       color: rgb(81, 75, 75);
+     font-weight: 800;
+     font-size: 10px;
+   }
+   
+   
+
+
+}
+
+
+/* for 360 px  */
+
+@media(max-width: 360px){
+
+
+    nav ul {
+        display: none;
+    
+    }
+
+    .menu-section{
+        position: relative;
+        left: 10px;
+        top: 40px;
+    
+    } 
+
+
+
+    .menu-card{
+      display: flex;
+      flex-direction: column;
+        
+    
+      
+    }
+
+    .checkout{
+        height: 250px;
+    }
+    
+
+   
+   
+   
+   
+   .online{
+    height: 250px;
+   }
+   
+
+
+
+
+}
